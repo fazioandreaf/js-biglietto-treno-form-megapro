@@ -15,6 +15,8 @@ generaBTN.addEventListener('click',function(){
             document.getElementById('offerta').innerHTML= 'Offerta Minorenne'
         }else if(eta==2){
             document.getElementById('offerta').innerHTML= 'Offerta Anziani'
+        }else if(eta==0){
+            document.getElementById('offerta').innerHTML= ''
         }
         numerocarrozza=Math.floor(Math.random()*20)
         document.getElementById('numerocarrozza').innerHTML= numerocarrozza;
