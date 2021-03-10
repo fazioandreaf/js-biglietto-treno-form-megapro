@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/main.css" >
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Calcola il prezzo del tuo biglietto
+        </h1>
+    </header>
+    <div class="container">
+        <div class="first_row">
+            <span>
+                <h3>Nome Cognome</h3>
+                <input type="text" name="nome" id="nome">
+            </span>
+            <span>
+                <h3>Km da percorrere</h3>
+                <input type="text" name="distanza" id="distanza">
+            </span>
+            <span>
+                <h3>Fascia d'età</h3>
+                <select name="" id="eta">
+                    <option value="0">Maggiorenne</option>
+                    <option value="1">Minorenne</option>
+                    <option value="2">Anziano (+65)</option>
+                </select>
+            </span>
+        </div>
+        <div class="second_row">
+            <input id="genera" type="button" value="Genera">
+            <input id="annulla" type="button" value="Annulla">
+        </div>
+    </div>
+    <h2>Il tuo biglietto</h2>
+    <div class="container">
+        <h2>Dettaglio passeggeri</h2>
+        <div class="info-generali">
+            <div class="cliente">
+                <h4>Nome passeggero</h4>
+            </div>
+            <div class="informazioni">
+                <table>
+                    <thead> 
+                        <tr> 
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice cp</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td id="cp"></td>
+                        <td id="costoTot"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
