@@ -7,10 +7,17 @@ generaBTN.addEventListener('click',function(){
     var nome = document.getElementById('nome').value;
     var distanza = parseInt(document.getElementById('distanza').value);
     var eta = document.getElementById('eta').value;
-
+    document.getElementById('nomepasseggero').innerHTML = nome;
     console.log(nome,distanza,eta)
     if (nome !== 0 && distanza>0 && eta!==''){
         costoTotale = costo *distanza;
+        if (eta==1){
+            document.getElementById('offerta').innerHTML= 'Offerta Minorenne'
+        }else if(eta==2){
+            document.getElementById('offerta').innerHTML= 'Offerta Anziani'
+        }
+        numerocarrozza=Math.floor(Math.random()*20)
+        document.getElementById('numerocarrozza').innerHTML= numerocarrozza;
         if (eta==1 || eta==2){
             costoTotale = costoScontato *distanza;
         } else {
